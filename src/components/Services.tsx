@@ -13,12 +13,6 @@ import {
 const Services = () => {
   const services = [
     {
-      icon: Globe,
-      title: "Desenvolvimento de Sites e Landing Pages",
-      description: "Criação de interfaces modernas, responsivas e otimizadas para apresentar empresas, produtos ou serviços.",
-      features: ["React", "HTML/CSS", "JavaScript", "Design Responsivo"]
-    },
-    {
       icon: Server,
       title: "Aplicações Web e APIs",
       description: "Backend com Node.js + Express e integração com bancos de dados, com autenticação, CRUDs e lógica de negócio bem estruturada.",
@@ -36,12 +30,7 @@ const Services = () => {
       description: "Conexão, modelagem e manipulação de dados com PostgreSQL e MySQL.",
       features: ["PostgreSQL", "MySQL", "Modelagem", "Otimização"]
     },
-    {
-      icon: Code,
-      title: "Projetos sob medida",
-      description: "Desenvolvimento de funcionalidades ou sistemas personalizados, conforme a necessidade do cliente.",
-      features: ["Soluções customizadas", "Análise de requisitos", "Implementação", "Manutenção"]
-    }
+
   ];
 
   return (

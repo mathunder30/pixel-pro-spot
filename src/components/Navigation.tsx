@@ -39,7 +39,7 @@ const Navigation = () => {
             className="flex items-center gap-2 font-bold text-xl hover:scale-105 transition-transform"
           >
             <Code2 className="w-6 h-6 text-primary" />
-            <span className="gradient-text">DevPortfolio</span>
+            <span className="gradient-text">MateusTech</span>
           </button>
 
           {/* Desktop Navigation */}

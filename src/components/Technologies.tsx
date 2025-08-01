@@ -6,8 +6,8 @@ const Technologies = () => {
       category: "Frontend",
       color: "primary",
       technologies: [
-        { name: "React", level: "Avançado" },
-        { name: "React Native", level: "Avançado" },
+        { name: "React", level: "Intermediário" },
+        { name: "React Native", level: "Intermediário" },
         { name: "HTML", level: "Avançado" },
         { name: "CSS", level: "Avançado" },
         { name: "JavaScript", level: "Avançado" }
@@ -19,7 +19,7 @@ const Technologies = () => {
       technologies: [
         { name: "Node.js", level: "Avançado" },
         { name: "Express", level: "Avançado" },
-        { name: "TypeScript", level: "Intermediário" }
+        { name: "TypeScript", level: "Avançado" }
       ]
     },
     {
@@ -38,7 +38,6 @@ const Technologies = () => {
         { name: "Prisma", level: "Intermediário" },
         { name: "Git", level: "Avançado" },
         { name: "GitHub", level: "Avançado" },
-        { name: "Insomnia", level: "Avançado" },
         { name: "Postman", level: "Avançado" },
         { name: "Figma", level: "Intermediário" }
       ]
