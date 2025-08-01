@@ -45,29 +45,29 @@ const Contact = () => {
     {
       name: "WhatsApp",
       icon: MessageSquare,
-      url: "https://wa.me/5511999999999",
+      url: "https://wa.me/5531995860596",
       description: "Chat direto",
       color: "bg-green-500"
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/mateus-lopes",
-      description: "linkedin.com/in/mateus-lopes",
+      url: "https://linkedin.com/in/mateus-lopes-316b58237",
+      description: "linkedin.com/in/mateus-lopes-316b58237",
       color: "bg-blue-600"
     },
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/mateuslopestec",
-      description: "github.com/mateuslopestec",
+      url: "https://github.com/mathunder30",
+      description: "github.com/mathunder30",
       color: "bg-gray-800"
     },
     {
       name: "E-mail",
       icon: Mail,
-      url: "mailto:mateuslopestec@gmail.com",
-      description: "mateuslopestec@gmail.com",
+      url: "mailto:mateustlopes11@gmail.com",
+      description: "mateustlopes11@gmail.com",
       color: "bg-red-500"
     }
   ];

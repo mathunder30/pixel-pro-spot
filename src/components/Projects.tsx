@@ -13,7 +13,7 @@ const Projects = () => {
       type: "Mobile App",
       icon: Smartphone,
       features: ["Login", "Feed de Treinos", "Notificações", "CRUD Usuários"],
-      github: "#",
+      github: "https://github.com/enzoea/ClubFitFenixapp",
       demo: "#",
       status: "Em desenvolvimento"
     },
@@ -25,7 +25,7 @@ const Projects = () => {
       type: "Web App",
       icon: Globe,
       features: ["Cadastro Pacientes", "Histórico Médico", "Medicamentos", "Relatórios"],
-      github: "#",
+      github: "https://github.com/mathunder30/API_PRONTUARIO_MEDICO",
       demo: "#"
     },
     {
@@ -148,7 +148,7 @@ const Projects = () => {
             variant="outline"
             asChild
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/mathunder30" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5 mr-2" />
               Ver Todos os Projetos no GitHub
             </a>
