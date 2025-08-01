@@ -20,14 +20,17 @@ const Hero = () => {
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-          <span className="gradient-text">Desenvolvedor</span>
-          <br />
-          <span className="text-foreground">Full Stack</span>
+          Olá, sou{" "}
+          <span className="gradient-text">Mateus Lopes</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-          Criando soluções digitais inovadoras com tecnologias modernas.
-          Especialista em React, Node.js e desenvolvimento de sistemas completos.
+        <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
+          Apaixonado por tecnologia e desenvolvimento de software
+        </p>
+        
+        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          Desenvolvedor Full Stack com foco em Node.js, React, React Native e bancos de dados.
+          Tecnologia é mais que uma profissão para mim, é o que me move.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">

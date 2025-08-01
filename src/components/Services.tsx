@@ -14,39 +14,33 @@ const Services = () => {
   const services = [
     {
       icon: Globe,
-      title: "Desenvolvimento Web",
-      description: "Sites e aplicações web modernas, responsivas e otimizadas para performance.",
-      features: ["React & Next.js", "TypeScript", "Tailwind CSS", "SEO Otimizado"]
-    },
-    {
-      icon: Smartphone,
-      title: "Apps Mobile",
-      description: "Aplicativos móveis nativos e híbridos para iOS e Android.",
-      features: ["React Native", "Expo", "Interface Nativa", "Push Notifications"]
+      title: "Desenvolvimento de Sites e Landing Pages",
+      description: "Criação de interfaces modernas, responsivas e otimizadas para apresentar empresas, produtos ou serviços.",
+      features: ["React", "HTML/CSS", "JavaScript", "Design Responsivo"]
     },
     {
       icon: Server,
-      title: "APIs & Backend",
-      description: "APIs RESTful robustas e sistemas backend escaláveis.",
-      features: ["Node.js", "Express", "FastAPI", "Microservices"]
+      title: "Aplicações Web e APIs",
+      description: "Backend com Node.js + Express e integração com bancos de dados, com autenticação, CRUDs e lógica de negócio bem estruturada.",
+      features: ["Node.js", "Express", "APIs RESTful", "Autenticação"]
+    },
+    {
+      icon: Smartphone,
+      title: "Aplicativos Mobile com React Native",
+      description: "Aplicativos funcionais, com navegação fluida e conexão com APIs, ideais para startups, academias, lojas, etc.",
+      features: ["React Native", "Navegação", "Integração API", "UI/UX"]
     },
     {
       icon: Database,
-      title: "Banco de Dados",
-      description: "Modelagem e otimização de bancos de dados relacionais e NoSQL.",
-      features: ["PostgreSQL", "MySQL", "MongoDB", "Redis"]
+      title: "Integrações com Banco de Dados",
+      description: "Conexão, modelagem e manipulação de dados com PostgreSQL e MySQL.",
+      features: ["PostgreSQL", "MySQL", "Modelagem", "Otimização"]
     },
     {
-      icon: Cloud,
-      title: "Cloud & DevOps",
-      description: "Deploy e infraestrutura em nuvem com práticas DevOps modernas.",
-      features: ["AWS", "Docker", "CI/CD", "Monitoramento"]
-    },
-    {
-      icon: Palette,
-      title: "UI/UX Design",
-      description: "Design de interfaces intuitivas focadas na experiência do usuário.",
-      features: ["Figma", "Prototipagem", "Design System", "Usabilidade"]
+      icon: Code,
+      title: "Projetos sob medida",
+      description: "Desenvolvimento de funcionalidades ou sistemas personalizados, conforme a necessidade do cliente.",
+      features: ["Soluções customizadas", "Análise de requisitos", "Implementação", "Manutenção"]
     }
   ];
 

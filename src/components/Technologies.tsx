@@ -7,11 +7,10 @@ const Technologies = () => {
       color: "primary",
       technologies: [
         { name: "React", level: "Avançado" },
-        { name: "Next.js", level: "Avançado" },
-        { name: "TypeScript", level: "Avançado" },
-        { name: "Tailwind CSS", level: "Avançado" },
-        { name: "JavaScript", level: "Avançado" },
-        { name: "HTML5/CSS3", level: "Avançado" }
+        { name: "React Native", level: "Avançado" },
+        { name: "HTML", level: "Avançado" },
+        { name: "CSS", level: "Avançado" },
+        { name: "JavaScript", level: "Avançado" }
       ]
     },
     {
@@ -19,44 +18,29 @@ const Technologies = () => {
       color: "accent",
       technologies: [
         { name: "Node.js", level: "Avançado" },
-        { name: "Express.js", level: "Avançado" },
-        { name: "Python", level: "Intermediário" },
-        { name: "FastAPI", level: "Intermediário" },
-        { name: "REST APIs", level: "Avançado" },
-        { name: "GraphQL", level: "Intermediário" }
-      ]
-    },
-    {
-      category: "Mobile",
-      color: "tech-purple",
-      technologies: [
-        { name: "React Native", level: "Avançado" },
-        { name: "Expo", level: "Avançado" },
-        { name: "iOS", level: "Intermediário" },
-        { name: "Android", level: "Intermediário" }
+        { name: "Express", level: "Avançado" },
+        { name: "TypeScript", level: "Intermediário" }
       ]
     },
     {
       category: "Database",
-      color: "secondary",
+      color: "tech-purple",
       technologies: [
         { name: "PostgreSQL", level: "Avançado" },
-        { name: "MySQL", level: "Avançado" },
-        { name: "MongoDB", level: "Intermediário" },
-        { name: "Redis", level: "Intermediário" },
-        { name: "Supabase", level: "Avançado" }
+        { name: "MySQL", level: "Avançado" }
       ]
     },
     {
-      category: "DevOps & Tools",
-      color: "muted",
+      category: "Tools & Others",
+      color: "secondary",
       technologies: [
         { name: "Docker", level: "Intermediário" },
-        { name: "AWS", level: "Intermediário" },
-        { name: "Git/GitHub", level: "Avançado" },
-        { name: "Vercel", level: "Avançado" },
-        { name: "Figma", level: "Intermediário" },
-        { name: "VS Code", level: "Avançado" }
+        { name: "Prisma", level: "Intermediário" },
+        { name: "Git", level: "Avançado" },
+        { name: "GitHub", level: "Avançado" },
+        { name: "Insomnia", level: "Avançado" },
+        { name: "Postman", level: "Avançado" },
+        { name: "Figma", level: "Intermediário" }
       ]
     }
   ];
@@ -116,18 +100,18 @@ const Technologies = () => {
         <div className="mt-12 text-center">
           <div className="inline-flex flex-col sm:flex-row gap-4 p-6 bg-card border border-border/50 rounded-lg">
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-1">3+</div>
-              <div className="text-sm text-muted-foreground">Anos de Experiência</div>
+              <div className="text-2xl font-bold text-primary mb-1">Clean Code</div>
+              <div className="text-sm text-muted-foreground">Sempre aplicando</div>
             </div>
             <div className="hidden sm:block w-px bg-border"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-accent mb-1">20+</div>
-              <div className="text-sm text-muted-foreground">Projetos Concluídos</div>
+              <div className="text-2xl font-bold text-accent mb-1">Aprendizado</div>
+              <div className="text-sm text-muted-foreground">Constante evolução</div>
             </div>
             <div className="hidden sm:block w-px bg-border"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-purple-400 mb-1">15+</div>
-              <div className="text-sm text-muted-foreground">Tecnologias Dominadas</div>
+              <div className="text-2xl font-bold text-purple-400 mb-1">Inovação</div>
+              <div className="text-sm text-muted-foreground">Soluções funcionais</div>
             </div>
           </div>
         </div>

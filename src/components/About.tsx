@@ -23,9 +23,9 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Desenvolvedor Apaixonado</h3>
                 <p className="text-muted-foreground">
-                  Sou um desenvolvedor full stack com mais de 3 anos de experiência em criar 
-                  soluções digitais inovadoras. Minha paixão por tecnologia me motiva a estar 
-                  sempre aprendendo e explorando novas ferramentas.
+                  Sou Mateus Lopes, apaixonado por tecnologia e desenvolvimento de software.
+                  Atualmente trabalho com suporte técnico, mas meu foco profissional está na área de 
+                  desenvolvimento full stack, especialmente com Node.js, React, React Native e bancos de dados.
                 </p>
               </div>
             </div>
@@ -35,11 +35,11 @@ const About = () => {
                 <GraduationCap className="w-6 h-6 text-accent" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Formação</h3>
+                <h3 className="text-xl font-semibold mb-2">Experiência</h3>
                 <p className="text-muted-foreground">
-                  Graduado em Ciência da Computação, com especialização em desenvolvimento web 
-                  e mobile. Constantemente me atualizando com cursos e certificações nas 
-                  tecnologias mais modernas do mercado.
+                  Tenho experiência em construção de APIs, aplicações mobile e sistemas web, 
+                  sempre buscando entregar soluções funcionais, organizadas e com boa usabilidade.
+                  Estou em constante evolução e aprendizado.
                 </p>
               </div>
             </div>
@@ -51,8 +51,8 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Filosofia de Trabalho</h3>
                 <p className="text-muted-foreground">
-                  Acredito em código limpo, arquitetura sólida e experiência do usuário excepcional. 
-                  Cada projeto é uma oportunidade de criar algo único e impactante.
+                  Tecnologia é mais que uma profissão para mim, é o que me move. 
+                  Busco sempre aplicar boas práticas como Clean Code, arquitetura em camadas e versionamento com Git.
                 </p>
               </div>
             </div>
@@ -66,19 +66,19 @@ const About = () => {
               </div>
               <div className="space-y-3">
                 <div>
-                  <h4 className="font-semibold text-primary">Desenvolvedor Full Stack</h4>
-                  <p className="text-sm text-muted-foreground">2021 - Presente</p>
+                  <h4 className="font-semibold text-primary">Suporte Técnico</h4>
+                  <p className="text-sm text-muted-foreground">Atual</p>
                   <p className="text-sm mt-1">
-                    Desenvolvimento de aplicações web e mobile, APIs RESTful, 
-                    e arquitetura de sistemas escaláveis.
+                    Experiência em resolução de problemas e atendimento técnico,
+                    desenvolvendo habilidades de comunicação e análise.
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-primary">Desenvolvedor Frontend</h4>
-                  <p className="text-sm text-muted-foreground">2020 - 2021</p>
+                  <h4 className="font-semibold text-primary">Desenvolvedor Full Stack</h4>
+                  <p className="text-sm text-muted-foreground">Projetos Pessoais</p>
                   <p className="text-sm mt-1">
-                    Criação de interfaces modernas e responsivas utilizando 
-                    React, TypeScript e frameworks CSS.
+                    Desenvolvimento de aplicações web e mobile com Node.js, React, 
+                    React Native e bancos de dados PostgreSQL e MySQL.
                   </p>
                 </div>
               </div>

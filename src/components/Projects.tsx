@@ -6,35 +6,36 @@ import { ExternalLink, Github, Smartphone, Globe, Database } from "lucide-react"
 const Projects = () => {
   const projects = [
     {
-      title: "E-commerce Moderno",
-      description: "Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e dashboard de vendas.",
-      image: "🛒",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      type: "Web App",
-      icon: Globe,
-      features: ["Pagamentos", "Dashboard", "API RESTful", "Responsivo"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "App de Delivery",
-      description: "Aplicativo mobile para delivery de comida com geolocalização, pedidos em tempo real e sistema de avaliações.",
-      image: "🍕",
-      technologies: ["React Native", "Express", "MongoDB", "Socket.io"],
+      title: "ClubFit App",
+      description: "Aplicativo mobile para controle de treinos de academia. Backend com Node.js + PostgreSQL e frontend com React Native. Inclui login, feed de treinos, notificações e CRUD de usuários.",
+      image: "💪",
+      technologies: ["React Native", "Node.js", "PostgreSQL", "Express"],
       type: "Mobile App",
       icon: Smartphone,
-      features: ["Tempo Real", "Geolocalização", "Push Notifications", "Avaliações"],
+      features: ["Login", "Feed de Treinos", "Notificações", "CRUD Usuários"],
+      github: "#",
+      demo: "#",
+      status: "Em desenvolvimento"
+    },
+    {
+      title: "Sistema de Prontuário Médico",
+      description: "Sistema web para cadastro de pacientes, medicamentos e histórico médico. Desenvolvido com Node.js, React e banco de dados relacional.",
+      image: "🏥",
+      technologies: ["React", "Node.js", "Express", "MySQL"],
+      type: "Web App",
+      icon: Globe,
+      features: ["Cadastro Pacientes", "Histórico Médico", "Medicamentos", "Relatórios"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Sistema de Gestão",
-      description: "ERP completo para pequenas empresas com controle de estoque, vendas, clientes e relatórios financeiros.",
-      image: "📊",
-      technologies: ["Next.js", "TypeScript", "Supabase", "Chart.js"],
-      type: "Dashboard",
+      title: "Projetos Futuros",
+      description: "Espaço reservado para mais projetos que virão em breve. Sempre trabalhando em novas ideias e soluções inovadoras.",
+      image: "🚀",
+      technologies: ["React", "Node.js", "TypeScript", "PostgreSQL"],
+      type: "Em Breve",
       icon: Database,
-      features: ["Relatórios", "Controle de Estoque", "Multi-usuário", "Export PDF"],
+      features: ["Inovação", "Tecnologias Modernas", "Soluções Personalizadas", "Clean Code"],
       github: "#",
       demo: "#"
     }
@@ -48,6 +49,8 @@ const Projects = () => {
         return "bg-accent text-accent-foreground";
       case "Dashboard":
         return "bg-purple-500 text-white";
+      case "Em Breve":
+        return "bg-orange-500 text-white";
       default:
         return "bg-secondary text-secondary-foreground";
     }
@@ -76,8 +79,11 @@ const Projects = () => {
                     {project.type}
                   </Badge>
                 </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                 <CardTitle className="text-xl group-hover:text-primary transition-colors">
                   {project.title}
+                  {project.status && (
+                    <span className="text-sm text-muted-foreground ml-2">({project.status})</span>
+                  )}
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">
                   {project.description}

@@ -52,22 +52,22 @@ const Contact = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/",
-      description: "Rede profissional",
+      url: "https://linkedin.com/in/mateus-lopes",
+      description: "linkedin.com/in/mateus-lopes",
       color: "bg-blue-600"
     },
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/",
-      description: "Código e projetos",
+      url: "https://github.com/mateuslopestec",
+      description: "github.com/mateuslopestec",
       color: "bg-gray-800"
     },
     {
       name: "E-mail",
       icon: Mail,
-      url: "mailto:contato@exemplo.com",
-      description: "contato@exemplo.com",
+      url: "mailto:mateuslopestec@gmail.com",
+      description: "mateuslopestec@gmail.com",
       color: "bg-red-500"
     }
   ];
