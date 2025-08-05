@@ -1,3 +1,5 @@
+# frontend/Dockerfile
+
 FROM node:22
 
 WORKDIR /app
@@ -8,8 +10,12 @@ RUN npm install
 
 COPY . .
 
+# Build do Vite
 RUN npm run build
 
-EXPOSE 3000
+# Serve a build estática usando um servidor leve (serve)
+RUN npm install -g serve
 
-CMD ["npm", "start"]
+EXPOSE 4173
+
+CMD ["serve", "-s", "dist", "-l", "4173"]
