@@ -12,7 +12,10 @@ const app = express();
 const port: number= Number(process.env.PORT || 4000);
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({
+  origin: ["http://localhost:4173", "http://frontend_project:4173"], // pode ajustar se precisar
+  methods: ["GET", "POST", "PUT", "DELETE"],
+}));
 app.use(bodyParser.json());
 app.use('/api', router);
 

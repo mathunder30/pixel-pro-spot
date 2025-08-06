@@ -28,7 +28,7 @@ const Contact = () => {
   e.preventDefault();
 
   try {
-    const response = await fetch("http://192.168.0.102:4000/api/user/register", {
+    const response = await fetch("http://backend_project:4000/api/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
