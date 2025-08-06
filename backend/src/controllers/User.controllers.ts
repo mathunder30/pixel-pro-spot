@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
 import { Usuario } from "../models/User.js";
-import { Prisma } from "@prisma/client";
+
 
 
 
