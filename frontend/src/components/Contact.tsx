@@ -14,6 +14,8 @@ import {
   ExternalLink
 } from "lucide-react";
 
+
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -22,17 +24,45 @@ const Contact = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Simulação de envio - aqui você integraria com um serviço real
-    toast({
-      title: "Mensagem enviada!",
-      description: "Obrigado pelo contato. Retornarei em breve!",
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("http://192.168.0.102:4000/api/user/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        nome: formData.name,
+        email: formData.email,
+        mensagem: formData.message,
+      }),
     });
-    
-    setFormData({ name: "", email: "", message: "" });
-  };
+
+    if (response.ok) {
+      toast({
+        title: "Mensagem enviada!",
+        description: "Obrigado pelo contato. Retornarei em breve!",
+      });
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      toast({
+        title: "Erro ao enviar mensagem",
+        description: "Tente novamente mais tarde.",
+        variant: "destructive",
+      });
+    }
+  } catch (error) {
+    console.error("Erro ao enviar formulário:", error);
+    toast({
+      title: "Erro de conexão",
+      description: "Não foi possível conectar à API.",
+      variant: "destructive",
+    });
+  }
+};
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -40,6 +70,8 @@ const Contact = () => {
       [e.target.name]: e.target.value
     }));
   };
+
+  
 
   const contactLinks = [
     {
