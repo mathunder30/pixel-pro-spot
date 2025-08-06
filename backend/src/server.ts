@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import os from 'os';
+import router from './routes/routes.js'
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ app.use(express.json());
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/api', router);
 
 const getLocalIPAddress = (): string => {
   const interfaces = os.networkInterfaces();
