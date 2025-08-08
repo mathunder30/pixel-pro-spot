@@ -16,6 +16,7 @@ app.use(cors({
   origin: ["http://localhost:4173", "http://frontend_project:4173"], // pode ajustar se precisar
   methods: ["GET", "POST", "PUT", "DELETE"],
 }));
+
 app.use(bodyParser.json());
 app.use('/api', router);
 
@@ -42,7 +43,7 @@ app.get('/api/ip', (req: Request, res: Response) => {
 
 // Iniciar servidor
 const server = app.listen(port, '0.0.0.0', () => {
-  console.log(`Servidor rodando em http://192.168.0.102:${port}`);
+  console.log(`Servidor rodando em http://localhost:${port}`);
 });
 
 
