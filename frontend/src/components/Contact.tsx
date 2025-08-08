@@ -18,9 +18,9 @@ import {
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    nome: "",
+    name: "",
     email: "",
-    mensagem: ""
+    message: ""
   });
   const { toast } = useToast();
 
@@ -31,15 +31,15 @@ const Contact = () => {
 
     console.log("Enviando para API:", formData);
 
-    const response = await fetch("http://192.168.0.102:4000/api/user/register", {
+    const response = await fetch("http://backend:4000/api/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        nome: formData.nome,
+        nome: formData.name,
         email: formData.email,
-        mensagem: formData.mensagem,
+        mensagem: formData.message,
       }),
       
     });
@@ -50,7 +50,7 @@ const Contact = () => {
         title: "Mensagem enviada!",
         description: "Obrigado pelo contato. Retornarei em breve!",
       });
-      setFormData({ nome: "", email: "", mensagem: "" });
+      setFormData({ name: "", email: "", message: "" });
     } else {
       toast({
         title: "Erro ao enviar mensagem",
@@ -140,7 +140,7 @@ const Contact = () => {
                   <Input
                     id="name"
                     name="name"
-                    value={formData.nome}
+                    value={formData.name}
                     onChange={handleChange}
                     placeholder="Seu nome completo"
                     required
@@ -165,7 +165,7 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    value={formData.mensagem}
+                    value={formData.message}
                     onChange={handleChange}
                     placeholder="Conte-me sobre seu projeto..."
                     rows={5}

@@ -13,9 +13,11 @@ const port: number= Number(process.env.PORT || 4000);
 app.use(express.json());
 
 app.use(cors({
-  origin: ["http://localhost:4173", "http://frontend_project:4173"], // pode ajustar se precisar
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: 'http://localhost:5173', // libera só para o seu frontend
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 
 app.use(bodyParser.json());
 app.use('/api', router);
@@ -43,7 +45,7 @@ app.get('/api/ip', (req: Request, res: Response) => {
 
 // Iniciar servidor
 const server = app.listen(port, '0.0.0.0', () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+  console.log(`Servidor rodando em http://192.168.0.102:${port}`);
 });
 
 

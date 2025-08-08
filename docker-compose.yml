@@ -5,11 +5,13 @@ services:
     build: ./frontend
     container_name: frontend_project
     ports:
-      - "4173:4173"
+      - "5173:5173"
     volumes:
       - ./frontend:/app
     depends_on:
       - backend
+    environment:
+      - VITE_API_URL=http://backend:4000
     networks:
       - app-network
 
