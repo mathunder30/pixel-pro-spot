@@ -31,7 +31,7 @@ const Contact = () => {
 
     console.log("Enviando para API:", formData);
 
-    const response = await fetch("http://backend:4000/api/user/register", {
+    const response = await fetch("http://192.168.0.102:4000/api/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
