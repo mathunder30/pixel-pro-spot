@@ -23,9 +23,9 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Desenvolvedor Apaixonado</h3>
                 <p className="text-muted-foreground">
-                  Sou Mateus Lopes, apaixonado por tecnologia e desenvolvimento de software.
-                  Atualmente trabalho com suporte técnico, mas meu foco profissional está na área de 
-                  desenvolvimento full stack, especialmente com Node.js, React, React Native e bancos de dados.
+                  Sou Mateus Lopes, apaixonado por tecnologia e desenvolvimento de software. Tenho foco em backend, especializado em Node.js, Express e TypeScript, desenvolvendo APIs REST/RESTful e integrando sistemas com bancos de dados relacionais e não relacionais. Estou constantemente
+                   aprimorando meus conhecimentos em React e React Native para expandir 
+                   minhas habilidades como desenvolvedor full stack.
                 </p>
               </div>
             </div>

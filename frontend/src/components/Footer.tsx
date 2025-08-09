@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 justify-center md:justify-start mb-4">
               <Code2 className="w-6 h-6 text-primary" />
-              <span className="font-bold text-xl gradient-text">DevPortfolio</span>
+              <span className="font-bold text-xl gradient-text">MateusTech</span>
             </div>
             <p className="text-muted-foreground text-sm">
               Transformando ideias em código e criando soluções digitais que fazem a diferença.
@@ -54,7 +54,7 @@ const Footer = () => {
         <div className="border-t border-border/50 mt-8 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-              <span>© {currentYear} DevPortfolio. Feito com</span>
+              <span>© {currentYear} MateusTech. Feito com</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
               <span>e</span>
               <Coffee className="w-4 h-4 text-amber-600" />

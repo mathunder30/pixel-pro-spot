@@ -29,8 +29,9 @@ const Hero = () => {
         </p>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Desenvolvedor Full Stack com foco em Node.js, React, React Native e bancos de dados.
-          Tecnologia é mais que uma profissão para mim, é o que me move.
+          Desenvolvedor backend especializado em Node.js, Express e TypeScript, com experiência em APIs REST/RESTful, 
+          métodos HTTP e integração com bancos de dados. 
+          Transformo ideias em soluções que fazem a diferença.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">

@@ -18,6 +18,7 @@ const Technologies = () => {
       color: "accent",
       technologies: [
         { name: "Node.js", level: "Avançado" },
+        { name: "APIs REST/RESTful", level: "Avançado" },
         { name: "Express", level: "Avançado" },
         { name: "TypeScript", level: "Avançado" }
       ]
