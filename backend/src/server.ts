@@ -9,14 +9,15 @@ import router from './routes/routes.js'
 dotenv.config();
 
 const app = express();
-const port: number= Number(process.env.PORT || 4000);
+const port: number= Number(process.env.PORT || 3000);
 app.use(express.json());
 
 app.use(cors({
-  origin: 'http://localhost:5173', // libera só para o seu frontend
+  origin: ['http://localhost:5173', 'http://192.168.0.102:5173', 'http://frontend:5173'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 
 
 app.use(bodyParser.json());

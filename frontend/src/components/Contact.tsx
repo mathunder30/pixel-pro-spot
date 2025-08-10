@@ -17,6 +17,7 @@ import {
 
 
 const Contact = () => {
+  console.log("Contact carregado");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,12 +27,15 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
-
   try {
+
+    const apiUrl = import.meta.env.VITE_API_URL || "http://backend:3000";
+    console.log("API URL usada:", apiUrl);
+
 
     console.log("Enviando para API:", formData);
 
-    const response = await fetch("http://192.168.0.102:4000/api/user/register", {
+    const response = await fetch(`${apiUrl}/api/user/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

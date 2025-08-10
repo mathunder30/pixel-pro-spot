@@ -3,23 +3,23 @@ version: '3.8'
 services:
   frontend:
     build: ./frontend
-    container_name: frontend_project
+    container_name: frontend
     ports:
       - "5173:5173"
-    volumes:
-      - ./frontend:/app
+    #volumes:
+     # - ./frontend:/app
     depends_on:
       - backend
     environment:
-      - VITE_API_URL=http://backend:4000
+      - VITE_API_URL=http://backend:3000
     networks:
       - app-network
 
   backend:
     build: ./backend
-    container_name: backend_project
+    container_name: backend
     ports:
-      - "4000:4000"
+      - "3000:3000"
     volumes:
       - ./backend/src:/app/src        
       - ./backend/tsconfig.json:/app/tsconfig.json
@@ -33,7 +33,7 @@ services:
 
   dbpostgre:
     image: postgres:16
-    container_name: portfolio_postgres
+    container_name: db
     restart: always
     ports:
       - "5432:5432"
