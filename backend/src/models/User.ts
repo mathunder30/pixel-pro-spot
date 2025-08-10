@@ -16,9 +16,6 @@ interface IUsuario {
 export class Usuario {
     static async RegisterUser(usuarios: IUsuario): Promise<IUsuario> {
 
-    
-
-
         const novoUsuario = await prisma.usuario.create({
             data: {
                 nome: usuarios.nome,
@@ -27,7 +24,22 @@ export class Usuario {
                 
             }
         });
+
     console.log(`Usuario ${usuarios.nome} cadastrado com sucesso!`);
+
     return novoUsuario;
+
     }
-}
+
+    static async FindByEmail (email: string): Promise<IUsuario | null>{
+
+        const Byemail = await prisma.usuario.findUnique({
+            where: ({email})
+
+        });
+
+        console.log(`Email já registrado: ${email}`);
+
+        return Byemail;
+    };
+};

@@ -15,6 +15,14 @@ export const RegisterUserController = async (req: Request, res: Response) =>  {
     }
 
     try {
+
+        const ExistingUser = await Usuario.FindByEmail(email);
+        if(ExistingUser){
+            return res.status(400).json({ error: 'Email já cadastrado'});
+            
+        }
+
+        
         const novoUser = await Usuario.RegisterUser({nome, email, mensagem});
 
         res.status(201).json(novoUser);
