@@ -29,7 +29,7 @@ const Contact = () => {
   e.preventDefault();
   try {
 
-    const apiUrl = import.meta.env.VITE_API_URL || "http://backend:3000";
+    const apiUrl = import.meta.env.VITE_API_URL || "https://backend-portifolio-2rl7.onrender.com/";
     console.log("API URL usada:", apiUrl);
 
 
